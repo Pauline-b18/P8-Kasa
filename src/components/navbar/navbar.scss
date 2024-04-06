@@ -1,0 +1,21 @@
+.Navbar{
+    padding-left: 5%;
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+    .NavbarLink{
+        width: 15%;
+        display: flex;
+        justify-content: space-between;
+        .activelink, .inactiveLink{
+            &:active{
+                border-bottom: 2px solid rgb(155, 51, 68);
+            }
+        }
+    }
+    .LogoPink{
+        width: 120px;
+    }
+}
