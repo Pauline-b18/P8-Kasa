@@ -1,9 +1,9 @@
-import Navbar from '../../components/navbar/navbar.js'
-import Banner from '../../components/banner/banner.js'
+import Navbar from '../../components/Navbar/Navbar.js'
+import Banner from '../../components/Banner/Banner.js'
 import Banner_Image from '../../assets/img-banner-home.png'
-// import FonctionGallery from '../../components/gallery/....'
+import Gallery from '../../components/Gallery/Gallery.js'
 // import FonctionFooter from '../../components/Footer/....'
-import './home.scss';
+import '../../assets/style/pages/home.scss';
 
 function Home(){
     return(
@@ -11,7 +11,7 @@ function Home(){
             <Navbar/>
             <Banner title="Chez vous, partout et ailleurs. " image={Banner_Image}/>
             <main className='HomeMain'>
-                {/* <Gallery/> */}
+                <Gallery/>
             </main>
             {/* <Footer /> */}
         </div>
