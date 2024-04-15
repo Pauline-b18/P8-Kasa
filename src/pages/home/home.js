@@ -2,7 +2,7 @@ import Navbar from '../../components/Navbar/Navbar.js'
 import Banner from '../../components/Banner/Banner.js'
 import Banner_Image from '../../assets/img-banner-home.png'
 import Gallery from '../../components/Gallery/Gallery.js'
-// import FonctionFooter from '../../components/Footer/....'
+import Footer from '../../components/Footer/Footer.js'
 import '../../assets/style/pages/home.scss';
 
 function Home(){
@@ -13,7 +13,7 @@ function Home(){
             <main className='HomeMain'>
                 <Gallery/>
             </main>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

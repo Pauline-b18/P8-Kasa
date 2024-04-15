@@ -1,4 +1,5 @@
-// @import 'src/Sass/BaseElements.scss';
+@import '../sass/mixin.scss';
+@import '../sass/variable.scss';
 
 .cardContainer {
   position: relative; 
@@ -10,25 +11,28 @@
   position: relative; 
   text-align: left;
   text-decoration: none;
-  color: white;
+  color: $White;
 
   h2 {
+    width: 70%;
     position: absolute;
     bottom: 10px;
     padding: 10px;
     font-size: 16px;
-    width: 70%
   }
 
   img {
-    // @include borderRadius; 
+    @include borderRadius; 
     width: 100%;
     height: 100%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     object-fit: cover;
   }
 }
-@media (max-width: 750px) {
+
+/** MEDIA QUERY **/
+
+@media (max-width: 750px) { //à revoir
   .cardContainer{
     width: 335px;
     height: 255px;

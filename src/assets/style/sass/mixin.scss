@@ -1,0 +1,21 @@
+@mixin FlexAndSpace{
+    display: flex;
+    justify-content: space-between;
+}
+@mixin FlexAndCenter{
+    display: flex;
+    justify-content: center;
+}
+@mixin borderRadius{
+    border-radius: 25px;
+}
+@mixin collapseBorderRadius{
+    border-radius: 10px;
+}
+@mixin boxShadow{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+@mixin LinkStyle{
+    color: $Pink;
+    text-decoration: none;
+}

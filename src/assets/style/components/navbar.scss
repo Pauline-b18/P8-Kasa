@@ -1,19 +1,19 @@
+@import '../sass/mixin.scss';
+@import '../sass/variable.scss';
+
 .Navbar {
     padding-left: 5%;
     padding-top: 2%;
-    display: flex;
-    justify-content: space-between;
+    @include FlexAndSpace;
     align-items: center;
     padding-right: 5%;
 
     .NavbarLink {
         width: 15%;
-        border: solid 2px;
-        display: flex;
-        justify-content: space-between;
+        @include FlexAndSpace;
 
         .activeLink, .inactiveLink &:active {
-            border-bottom: 2px solid rgb(155, 51, 68);
+            border-bottom: 2px solid $Red;
         }
     }
 
@@ -21,3 +21,13 @@
         width: 120px;
     }
 }
+
+// MEDIA QUERY //
+
+@media (max-width: 750px) { //a modif
+    .Navbar {
+        .NavbarLink {
+          width: 50%;
+        }
+      }
+} 
