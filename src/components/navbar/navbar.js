@@ -15,14 +15,13 @@ function Navbar() {
             <img src={logo_red} alt='Logo Kasa' className="logored" />
             <div className="NavbarLink">
                 {/* Lien vers la page "Accueil" */}
-                {/* Applique la classe "activeLink" si la route actuelle correspond au lien */}
-                {/* Applique la classe "inactiveLink" si la route actuelle ne correspond pas au lien */}
+                {/* Applique la classe "activeLink" si la route actuelle correspond au lien et "inactiveLink" si la route actuelle ne correspond pas */}
                 <Link to="/" className={currentRoute === '/' ? 'activeLink' : 'inactiveLink'}>
                     Accueil
                 </Link>
 
                 {/* Lien vers la page "A propos" */}
-                <Link to="/A-propos" className={currentRoute === '/A-propos' ? 'activeLink' : 'inactiveLink'}>
+                <Link to="/About" className={currentRoute === '/About' ? 'activeLink' : 'inactiveLink'}>
                     À propos
                 </Link>
             </div>

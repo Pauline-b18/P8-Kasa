@@ -1,0 +1,44 @@
+.CollapseBar {
+  width: 95%;
+  background-color: #FF6060;
+  color: #fff;
+  margin-bottom: 2%;
+  margin-left: 3%;
+  border-radius: 10px;
+}
+.CollapseBar .CollapseContent {
+  width: 100%;
+  background-color: #fff;
+  color: #FF6060;
+  opacity: 1;
+}
+.CollapseBar .CollapseTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1%;
+  font-size: 16px;
+}
+.CollapseBar .collapse-arrow {
+  transition: transform 0.3s ease-in-out;
+}
+.CollapseBar .collapse-arrow.open {
+  transform: rotate(180deg);
+}
+.CollapseBar .collapseContent, .CollapseBar ul {
+  background-color: #F6F6F6;
+  border-radius: 0 0 10px 10px;
+  font-size: 12px;
+  padding: 2%;
+}
+.CollapseBar .collapseContent li, .CollapseBar .collapseContent p, .CollapseBar ul li, .CollapseBar ul p {
+  color: #FF6060;
+}
+
+@media (max-width: 750px) {
+  .CollapseBar {
+    margin-bottom: 8%;
+  }
+}
+
+/*# sourceMappingURL=collapse.css.map */

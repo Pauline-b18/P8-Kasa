@@ -1,0 +1,47 @@
+@import "../sass/mixin.scss";
+@import "../sass/variable.scss";
+
+.CollapseBar {
+    width: 95%;
+    background-color: $Red;
+    color: $White;
+    margin-bottom: 2%;
+    margin-left: 3%;
+    @include collapseBorderRadius;
+
+    .CollapseContent {
+      width: 100%;
+      background-color: $White;
+      color: $Red;
+      opacity: 1;
+    }
+    .CollapseTitle {
+      @include FlexAndSpace;
+      align-items: center;
+      padding-left: 1%;
+      font-size: 16px;
+    }
+    .collapse-arrow {
+      transition: transform 0.3s ease-in-out;
+    }
+    .collapse-arrow.open {
+      transform: rotate(180deg);
+    }
+    .collapseContent, ul {
+      background-color: $Grey;
+      border-radius: 0 0 10px 10px;
+      font-size: 12px;
+      padding: 2%;
+  
+      & li, p{
+          color: $Red;
+      }
+    }
+  }
+
+  // QUERY - VERSION MOBILE  //
+  @media (max-width: 750px) {
+    .CollapseBar{
+      margin-bottom: 8%;
+    }
+  } 

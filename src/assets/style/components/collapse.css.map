@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["collapse.scss","../sass/variable.scss","../sass/mixin.scss"],"names":[],"mappings":"AAGA;EACI;EACA,kBCLE;EDMF,OCFK;EDGL;EACA;EEIA;;AFDA;EACE;EACA,kBCTG;EDUH,OCdA;EDeA;;AAEF;EEhBA;EACA;EFiBE;EACA;EACA;;AAEF;EACE;;AAEF;EACE;;AAEF;EACE,kBCxBE;EDyBF;EACA;EACA;;AAEA;EACI,OCpCJ;;;AD0CJ;EACE;IACE","file":"collapse.css"}
