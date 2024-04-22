@@ -9,26 +9,55 @@
     align-items: center;
     padding-right: 5%;
 
+    .logored {
+        width: 210px;
+    }
+
     .NavbarLink {
-        width: 15%;
+        width: 25%;
+        font-size: 24px;
+        font-weight: 500;
         @include FlexAndSpace;
 
+        .activeLink, .inactiveLink {
+            margin-left: auto; 
+        }
+
         .activeLink, .inactiveLink &:active {
-            border-bottom: 2px solid $Red;
+            border-bottom: 1px solid $Black;
         }
     }
 
-    .logored {
-        width: 120px;
+    
+}
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+/* Styles pour les tablettes */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Navbar {
+        .logored {
+            width: 145px;
+        }
+
+        .NavbarLink {
+            width: 32%;
+        }
     }
 }
 
-// MEDIA QUERY //
 
-@media (max-width: 750px) { //a modif
+/* Styles pour les appareils mobiles et les petites tablettes */
+@media (max-width: 768px) { 
     .Navbar {
-        .NavbarLink {
-          width: 50%;
+
+        .logored {
+            width: 140px;
         }
-      }
+        
+        .NavbarLink {
+            width: 52%;
+            font-size: 12px;
+        }
+    }
 } 

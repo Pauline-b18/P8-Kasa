@@ -5,10 +5,11 @@ import '../../assets/style/components/card.scss';
 function Card({ id, title, cover }) {
   return (
     <div className="cardContainer">
-    <Link to={`/Locations/${id}`} className="galleryCard">
-        <h2>{title}</h2>
-        <img src={cover} alt={title} />
-    </Link>
+      <Link to={`/Locations/${id}`} className="galleryCard">
+          <h2>{title}</h2>
+          <img src={cover} alt={title} />
+          <div className="mask"></div>
+      </Link>
     </div>
   );
 }

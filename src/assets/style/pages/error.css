@@ -9,6 +9,7 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 h3 {
@@ -21,35 +22,47 @@ li {
 
 a {
   text-decoration: none;
-  color: #FF6060;
+  color: #000000;
 }
 
 .ErrorMain {
   color: #FF6060;
-  text-align: center;
-  padding-bottom: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+  margin: 100px 0;
 }
 .ErrorMain .ErrorTitle {
-  font-size: 9.5rem; /** 152px **/
-  font-weight: bolder;
-  padding: 3% 0 5.5% 0;
+  font-size: 288px;
+  font-weight: 700;
 }
 .ErrorMain .ErrorText {
-  font-size: 18px;
-  padding-bottom: 4%;
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
 }
 .ErrorMain .ErrorLink {
-  color: #FF6060;
-  text-decoration: none;
+  color: #000000;
+  text-decoration: underline;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-@media (max-width: 750px) {
-  .ErrorTitle {
-    font-size: 6.5rem;
+/* Styles pour les appareils mobiles et les petites tablettes */
+@media (max-width: 768px) {
+  .ErrorMain {
+    gap: 100px;
   }
-  .ErrorText {
-    padding-bottom: 0;
-    margin-bottom: 22%;
+  .ErrorMain .ErrorTitle {
+    font-size: 96px;
+  }
+  .ErrorMain .ErrorText {
+    font-size: 18px;
+  }
+  .ErrorMain .ErrorLink {
+    font-size: 14px;
   }
 }
 

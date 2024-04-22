@@ -3,7 +3,34 @@
 @import '../sass/global.scss';
 
 .galleryContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px; 
+  @include borderRadius;
+  background-color: $Grey;
+  margin: 4% 5% 2% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 45px 28px; 
+  gap: 40px;
+
+}
+
+ ///////////////////////////////////////////////////////////////////////////////////////
+
+/* Styles pour les tablettes */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .galleryContainer {
+    padding: 30px;
+    gap: 30px;
   }
+}
+
+/* Styles pour les appareils mobiles et les petites tablettes */
+@media (max-width: 768px) { 
+.galleryContainer {
+  background-color: $White;
+  padding: 0;
+  margin-bottom: 30px;
+  gap: 20px;
+}
+} 

@@ -21,7 +21,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #FF6060;
+  color: #000000;
 }
 
 .Navbar {
@@ -32,21 +32,40 @@ a {
   align-items: center;
   padding-right: 5%;
 }
+.Navbar .logored {
+  width: 210px;
+}
 .Navbar .NavbarLink {
-  width: 15%;
+  width: 25%;
+  font-size: 24px;
+  font-weight: 500;
   display: flex;
   justify-content: space-between;
 }
-.Navbar .NavbarLink .activeLink, .inactiveLink .Navbar .NavbarLink:active {
-  border-bottom: 2px solid #FF6060;
+.Navbar .NavbarLink .activeLink, .Navbar .NavbarLink .inactiveLink {
+  margin-left: auto;
 }
-.Navbar .logored {
-  width: 120px;
+.Navbar .NavbarLink .activeLink, .inactiveLink .Navbar .NavbarLink:active {
+  border-bottom: 1px solid #000000;
 }
 
-@media (max-width: 750px) {
+/* Styles pour les tablettes */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .Navbar .logored {
+    width: 145px;
+  }
   .Navbar .NavbarLink {
-    width: 50%;
+    width: 32%;
+  }
+}
+/* Styles pour les appareils mobiles et les petites tablettes */
+@media (max-width: 768px) {
+  .Navbar .logored {
+    width: 140px;
+  }
+  .Navbar .NavbarLink {
+    width: 52%;
+    font-size: 12px;
   }
 }
 

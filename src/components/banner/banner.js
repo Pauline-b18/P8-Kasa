@@ -6,7 +6,7 @@ function Banner({ title, image }) {
 
   return (
     <div className="banner">
-      {title &&<h3 className='bannerTitleContent'>{title}</h3>} {/* Affichage du titre s'il est présent */}
+      {title &&<h3 className='bannerTitle'>{title}</h3>} {/* Affichage du titre */}
       <img src={image} alt="img" /> {/* Affichage de l'image avec la source passée en prop */}
     </div>
   );

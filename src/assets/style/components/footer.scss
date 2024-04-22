@@ -3,22 +3,38 @@
 @import '../sass/global.scss';
 
 .Footer {
-    width: 100%;
-    height: 80px;
-    color: $White;
     background-color: $Black;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    gap: 35px;
+    padding: 66px 0 30px;
+    margin-top: 50px ;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
 
         .LogoWhite{
-            height: 30px;
+            height: 40px;
             width: auto;
-            padding-bottom: 5px;
         }
         
         .FooterText{
-            font-size: 10px;
+            color: $White;
+            font-size: 24px;
+            font-weight: 500;
+            text-align: center;
         }
 }
+
+ ///////////////////////////////////////////////////////////////////////////////////////
+  
+  /* Styles pour les appareils mobiles et les petites tablettes */
+  @media (max-width: 768px) { 
+    .Footer {
+        .FooterText{
+            font-size: 12px;
+            width: 25%;
+        }
+    }
+  }  

@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from '../Card/Card.js'; 
-import data from '../../data/data.json'; //p-e à modif 
+import data from '../../data/data.json';
 import '../../assets/style/components/gallery.scss';
 
 function Gallery() {

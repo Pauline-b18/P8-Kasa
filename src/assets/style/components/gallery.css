@@ -21,13 +21,36 @@ li {
 
 a {
   text-decoration: none;
-  color: #FF6060;
+  color: #000000;
 }
 
 .galleryContainer {
+  border-radius: 25px;
+  background-color: #F6F6F6;
+  margin: 4% 5% 2% 5%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  padding: 45px 28px;
   gap: 40px;
+}
+
+/* Styles pour les tablettes */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .galleryContainer {
+    padding: 30px;
+    gap: 30px;
+  }
+}
+/* Styles pour les appareils mobiles et les petites tablettes */
+@media (max-width: 768px) {
+  .galleryContainer {
+    background-color: #fff;
+    padding: 0;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
 }
 
 /*# sourceMappingURL=gallery.css.map */
