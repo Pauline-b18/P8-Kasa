@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-// import data from '../../data/data.json';
 import arrow_left from '../../assets/arrow_left.png';
 import arrow_right from '../../assets/arrow_right.png';
 import "../../assets/style/components/carousel.scss"

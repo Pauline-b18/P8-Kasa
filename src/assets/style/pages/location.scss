@@ -2,29 +2,35 @@
 @import '../sass/variable.scss';
 @import '../sass/global.scss';
 
+
+.info { //contient tout
+    width: 90%;
+    margin: 0 auto;
+} 
+
 .infoLocation {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding-left: 5%;
-    width: 100%;
+    margin-top: 20px;
 
     .infoLocationPlace {
-        align-items: center;
+        width: 100%;
     }
 
     .infoLocationTitle {
-        font-size: 24px;
+        font-size: 36px;
+        font-weight: 500;
         padding-bottom: 1%;
-        line-height: 52px;
         color: $Red;
     }
 
     .infoLocationCity {
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: 500;
         padding-bottom: 2%;
         line-height: 25px;
-        color: $Red;
+        color: $Black;
     }
 
     .infoLocationTags {
@@ -34,68 +40,68 @@
         padding-bottom: 2%;
         width: 50%;
     }
+}
 
-    .infoLocationOther {
-        margin-right: 4%;
-        margin-top: 1%;
-        padding-right: 0;
+.infoLocationOther {
+    width: 50%;
 
-            .infoLocationHost {
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                color: $Red;
-                margin-left: 0;
-            }
-    }
+    display: flex;
+    flex-direction: column;
+
+        .infoLocationHost {
+            display: flex;
+            justify-content: flex-end;
+            color: $Red;
+
+        }
+
+        .infoNotationHost {
+
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        
 }
 
 .collapse-container {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 3%;
+    justify-content: space-between; 
+    margin: 0;
 
-    .collapse-left {
-      width: calc(50% - 1%);
-    }
+    .collapse-menu {
+        width: calc(50% - 10px); 
+        margin-bottom: 20px; 
 
-    .collapse-right {
-      width: calc(50% - 1%);
-      margin-left: 2%;
-    }
-  }
-
-//QUERY - VERSION MOBILE 
-
-@media (max-width: 750px) {
-    .infoLocation {
-        padding-right: 2%;
-
-        .infoLocationTitle {
-            font-size: 18px;
-            line-height: 1.2;
-        }
-    
-        .infoLocationOther {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            align-items: center;
+        .collapse-menu-bar {
             width: 100%;
-        }
-    }
+            border: solid 2px rgb(0, 255, 149);
+            height: 52px;
+            background-color: $Red;
+            @include collapseBorderRadius;
+            display: flex;
+            align-items: center;
+            padding: 0 15px;
 
-    .collapse-container {
-        flex-direction: column;
-        align-items: stretch;
-        width: 100%;
-        
-        .collapse-left,
-        .collapse-right {
-            width: 93%;
-            margin-left: 0;
-            margin-right: 0;
-        }
+            .collapse-menu-title {
+                font-size: 18px;
+                font-weight: 700;
+                color: white;
+            }
+        }    
     }
+}
+/////////////////////////////////////////////////////////////////
+/* Styles pour les tablettes */
+@media (min-width: 769px) and (max-width: 1024px) {
+    
   }
+  
+  
+  /* Styles pour les appareils mobiles et les petites tablettes */
+  @media (max-width: 768px) { 
+  
+  }  
+  

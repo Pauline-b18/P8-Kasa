@@ -4,7 +4,7 @@
 
 .collapse-menu {
   margin: 0 auto;
-  width: 80%;
+  width: 70%;
 
   .collapse-menu-bar {
     height: 52px;
@@ -65,7 +65,7 @@
 /* Styles pour les tablettes */
 @media (min-width: 769px) and (max-width: 1024px) {
   .collapse-menu {
-    width: 90%;
+    width: 80%;
   }
 }
 
@@ -73,7 +73,7 @@
 /* Styles pour les appareils mobiles et les petites tablettes */
 @media (max-width: 768px) { 
   .collapse-menu {
-    width: 100%;
+    width: 90%;
 
     .collapse-menu-bar {
       height: 30px;

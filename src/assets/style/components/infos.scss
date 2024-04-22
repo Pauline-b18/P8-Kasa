@@ -3,29 +3,42 @@
 @import '../sass/global.scss';
 
 .infoHost {
+    width: 200px;
     display: flex;
     align-items: center;
+    flex-direction: row;
+    gap: 10px;
 
     .infoHostName {
-        width: 80px;
+        word-spacing: 100vw;
         display: flex;
         flex-direction: column;
-        font-size: 16px;
+        font-size: 18px;
         text-align: end;
         font-weight: 500;
-        padding-right: 5%;
     }
 
     .infoHostPicture {
+        width: 64px;
+        height: 64px;
         border-radius: 50%;
-        margin-bottom: 2%;
+        object-fit: cover;
+        object-position: center;
     }
 }
 
-// QUERY - VERSION MOBILE
+ ///////////////////////////////////////////////////////////////////////////////////////
+  
+/* Styles pour les appareils mobiles et les petites tablettes */
+@media (max-width: 768px) { 
+    .infoHost {
+        .infoHostName {
+            font-size: 12px;
+        }
 
-@media (max-width: 750px) {
-    .infoHostPicture {
-        width: 40px;
+        .infoHostPicture {
+            width: 32px;
+            height: 32px;
+        }
     }
-}
+}  

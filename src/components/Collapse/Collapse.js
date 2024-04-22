@@ -2,18 +2,14 @@ import React, { useState } from "react";
 import PropTypes from 'prop-types';
 import "../../assets/style/components/collapse.scss";
 import arrow_top from '../../assets/arrow_top.png';
-import AboutData from "../../data/AboutData.json";
 
-const Collapse = ({ title }) => {
+const Collapse = ({ title, content, isLocation }) => {
     const [isCollapsed, setIsCollapsed] = useState(true);
 
     const toggleCollapse = () => {
       setIsCollapsed(!isCollapsed);
     };
-
-    // Recherche l'élément dans AboutData correspondant au titre actuel
-    const currentItem = AboutData.find(item => item.title === title);
-
+    
     return (
       <div className='collapse-menu'>
         <div className='collapse-menu-bar'>
@@ -32,7 +28,7 @@ const Collapse = ({ title }) => {
             isCollapsed ? '' : 'collapse-menu-content-dropdown'
           }`}
         >
-          {isCollapsed ? null : currentItem.content}
+          {isCollapsed ? null : content}
         </div>
       </div>
     );
@@ -40,6 +36,12 @@ const Collapse = ({ title }) => {
 
 Collapse.propTypes = {
     title: PropTypes.string.isRequired,
+    content: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).isRequired,  //soit une chaine de caractères soit un tableau
+    isLocation: PropTypes.bool // Ajoute une prop pour indiquer si le composant est utilisé dans Locations.js
+};
+
+Collapse.defaultProps = {
+    isLocation: false // Par défaut, le composant n'est pas utilisé dans Locations.js, lorsque "true" il est lit les données de dataLoc
 };
 
 export default Collapse;
