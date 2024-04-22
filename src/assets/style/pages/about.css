@@ -9,6 +9,7 @@
 body {
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 h3 {
@@ -21,22 +22,11 @@ li {
 
 a {
   text-decoration: none;
-  color: #FF6060;
+  color: #000000;
 }
 
 .AboutMain {
-  padding-right: 5%;
-  padding-left: 5%;
-  padding-top: 2%;
-  margin: 2%;
-  border: solid 1px blue;
-}
-
-@media (max-width: 750px) {
-  .AboutMain {
-    padding-right: 0;
-    padding-left: 0;
-  }
+  margin: 0 5%;
 }
 
 /*# sourceMappingURL=about.css.map */

@@ -1,49 +1,94 @@
-@import "../sass/mixin.scss";
-@import "../sass/variable.scss";
+@import '../sass/mixin.scss';
+@import '../sass/variable.scss';
 @import '../sass/global.scss';
 
-.CollapseBar {
-    width: 95%;
-    background-color: $Red;
-    color: $White;
-    margin-bottom: 2%;
-    margin-left: 3%;
-    @include collapseBorderRadius;
+.collapse-menu {
+  margin: 0 auto;
+  width: 80%;
 
-    .CollapseContent {
-      width: 100%;
-      background-color: $White;
-      color: $Red;
-      opacity: 1;
+  .collapse-menu-bar {
+    height: 52px;
+    background-color: $Red;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px 0 15px;
+    position: relative;
+    z-index: 1;
+    margin-top: 30px;
+
+    .collapse-menu-title {
+      font-size: 24px;
+      color: $White;
     }
-    
-    .CollapseTitle {
-      @include FlexAndSpace;
-      align-items: center;
-      padding-left: 1%;
-      font-size: 16px;
-    }
-    .collapse-arrow {
-      transition: transform 0.3s ease-in-out;
-    }
-    .collapse-arrow.open {
-      transform: rotate(180deg);
-    }
-    .collapseContent, ul {
-      background-color: $Grey;
-      border-radius: 0 0 10px 10px;
-      font-size: 12px;
-      padding: 2%;
-  
-      & li, p{
-          color: $Red;
+
+    .collapse-menu-chevron {
+      height: 14px;
+      cursor: pointer;
+      transition: transform 0.5s ease;
+
+      &.collapse-menu-chevron-dropdown {
+        transform: rotate(-180deg);
       }
     }
   }
 
-  // QUERY - VERSION MOBILE  //
-  @media (max-width: 750px) {
-    .CollapseBar{
-      margin-bottom: 8%;
+  .collapse-menu-content {
+    font-size: 18px;
+    font-weight: 400;
+    background-color: $Grey;
+    border-radius: 0 0 5px 5px;
+    margin-top: -5px;
+    padding: 0 20px;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+    color: $Black;
+
+
+    &.collapse-menu-content-dropdown {
+      max-height: 500px;
+      opacity: 1;
+      visibility: visible;
+      padding: 20px;
+      color: $Black;
     }
-  } 
+  }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+/* Styles pour les tablettes */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .collapse-menu {
+    width: 90%;
+  }
+}
+
+
+/* Styles pour les appareils mobiles et les petites tablettes */
+@media (max-width: 768px) { 
+  .collapse-menu {
+    width: 100%;
+
+    .collapse-menu-bar {
+      height: 30px;
+
+      .collapse-menu-title {
+        font-size: 13px;
+      }
+
+      img {
+        height: 10px;
+      }
+    }
+    
+    .collapse-menu-content {
+      font-size: 13px;
+    }
+  }
+}  
