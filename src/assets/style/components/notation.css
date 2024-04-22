@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h3 {
+  padding-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FF6060;
+}
+
+.notationHost {
+  margin-top: 1%;
+  padding-left: 145px;
+  padding-bottom: 2%;
+}
+.notationHost img {
+  width: 25px;
+  padding-left: 4%;
+}
+
+@media (max-width: 750px) {
+  .notationHost {
+    width: 40%;
+    display: flex;
+    padding-left: 0px;
+  }
+  .notationHost img {
+    width: 15px;
+  }
+}
+
+/*# sourceMappingURL=notation.css.map */

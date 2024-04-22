@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h3 {
+  padding-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FF6060;
+}
+
+.tag {
+  border-radius: 10px;
+  background-color: #FF6060;
+  color: #fff;
+  width: 155px;
+  padding: 1% 2%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.infoLocationTags .tag {
+  width: 100px;
+  font-size: 10px;
+}
+
+/*# sourceMappingURL=tag.css.map */

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h3 {
+  padding-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FF6060;
+}
+
+.ErrorMain {
+  color: #FF6060;
+  text-align: center;
+  padding-bottom: 6%;
+}
+.ErrorMain .ErrorTitle {
+  font-size: 9.5rem; /** 152px **/
+  font-weight: bolder;
+  padding: 3% 0 5.5% 0;
+}
+.ErrorMain .ErrorText {
+  font-size: 18px;
+  padding-bottom: 4%;
+}
+.ErrorMain .ErrorLink {
+  color: #FF6060;
+  text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  .ErrorTitle {
+    font-size: 6.5rem;
+  }
+  .ErrorText {
+    padding-bottom: 0;
+    margin-bottom: 22%;
+  }
+}
+
+/*# sourceMappingURL=error.css.map */

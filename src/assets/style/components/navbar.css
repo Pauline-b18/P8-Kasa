@@ -1,17 +1,53 @@
-/* Error: Undefined variable.
- *    ,
- * 16 |             border-bottom: 2px solid $Red;
- *    |                                      ^^^^
- *    '
- *   src\assets\style\components\navbar.scss 16:38  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 16 \2502              border-bottom: 2px solid $Red;\d\a    \2502                                       ^^^^\a    \2575 \a   src\\assets\\style\\components\\navbar.scss 16:38  root stylesheet";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
 }
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h3 {
+  padding-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FF6060;
+}
+
+.Navbar {
+  padding-left: 5%;
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 5%;
+}
+.Navbar .NavbarLink {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.Navbar .NavbarLink .activeLink, .inactiveLink .Navbar .NavbarLink:active {
+  border-bottom: 2px solid #FF6060;
+}
+.Navbar .logored {
+  width: 120px;
+}
+
+@media (max-width: 750px) {
+  .Navbar .NavbarLink {
+    width: 50%;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */

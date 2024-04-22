@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../sass/global.scss","error.scss","../sass/variable.scss","../sass/mixin.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;;;AAGJ;EACI;EACA;;;AAGJ;EACI;;;AAGJ;EACI;;;AAGJ;EACI;EACA;;;ACnBJ;EACI,OCLE;EDMF;EACA;;AAEA;EACI;EACA;EACA;;AAGJ;EACI;EACA;;AAGJ;EEFA,ODlBE;ECmBF;;;AFQJ;EACI;IACI;;EAEJ;IACI;IACA","file":"error.css"}

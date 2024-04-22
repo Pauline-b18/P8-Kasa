@@ -1,0 +1,31 @@
+@import "../sass/mixin.scss";
+@import "../sass/variable.scss";
+@import '../sass/global.scss';
+
+.infoHost {
+    display: flex;
+    align-items: center;
+
+    .infoHostName {
+        width: 80px;
+        display: flex;
+        flex-direction: column;
+        font-size: 16px;
+        text-align: end;
+        font-weight: 500;
+        padding-right: 5%;
+    }
+
+    .infoHostPicture {
+        border-radius: 50%;
+        margin-bottom: 2%;
+    }
+}
+
+// QUERY - VERSION MOBILE
+
+@media (max-width: 750px) {
+    .infoHostPicture {
+        width: 40px;
+    }
+}

@@ -1,0 +1,29 @@
+@import '../sass/mixin.scss';
+@import '../sass/variable.scss';
+@import '../sass/global.scss';
+
+
+.notationHost {
+    margin-top: 1%;
+    padding-left: 145px;
+    padding-bottom: 2%;
+
+    & img {
+        width: 25px;
+        padding-left: 4%;
+    }
+}
+
+//QUERY - VERSION MOBILE
+
+@media (max-width: 750px) {
+    .notationHost {
+        width: 40%;
+        display: flex;
+        padding-left: 0px;
+        
+        & img {
+            width: 15px;
+        }
+    }
+  }

@@ -1,0 +1,70 @@
+@import "../sass/mixin.scss";
+@import "../sass/variable.scss";
+@import '../sass/global.scss';
+
+.carouselContainer {
+    display: flex;
+    position: relative;
+    margin: 5% 0 0 5%;
+
+    .image-container {
+        width: 95%;
+        height: 330px;
+    }
+
+    .carousel_arrow {
+        position: absolute;
+    }
+
+    .carousel_arrow_right {
+        bottom: 49%;
+        left: 90%;
+    }
+
+    .carousel_arrow_left {
+        bottom: 42%;
+    }
+
+    .numberSlide {
+        color: $White;
+        position: absolute;
+        bottom: 2%;
+        left: 48%;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .image_carousel {
+        @include borderRadius;
+        object-fit: cover;
+    }
+
+}
+
+// QUERY - VERSION MOBILE
+
+.carouselContainer {
+
+    .image_carousel {
+        width: 95%;
+        height: 200px;
+        margin-right: 5%;
+    }
+
+    .carousel_arrow_left {
+        width: 20px;
+        height: 20px;
+        bottom: 45%;
+    }
+
+    .carousel_arrow_right {
+        width: 10px;
+        height: 15px;
+    }
+
+    .numberSlide {
+        font-size: 12px;
+        left: 43%;
+    }
+
+}

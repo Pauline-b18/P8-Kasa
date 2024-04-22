@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from '../src/pages/home/Home'
 import About from '../src/pages/about/About'
-//import Error
-//import Locations
+import Error from '../src/pages/error/Error';
+import Locations from '../src/pages/locations/Locations'
 
 
 function App() {
@@ -11,6 +11,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path='/About' element={<About />}/>
+        <Route path='/Locations/:id'element={<Locations />}/>
+        <Route path="*" element={<Error />}/>
       </Routes>
     </Router>
   );

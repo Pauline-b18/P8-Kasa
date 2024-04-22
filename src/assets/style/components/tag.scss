@@ -1,0 +1,22 @@
+@import '../sass/mixin.scss';
+@import '../sass/variable.scss';
+@import '../sass/global.scss'; 
+
+.tag {
+    @include collapseBorderRadius;
+    background-color: $Red;
+    color: $White;
+    width: 155px;
+    padding: 1% 2%;
+    text-align: center;
+    font-size: 15px;
+}
+
+// QUERY - VERSION MOBILE
+
+.infoLocationTags {
+    .tag {
+        width: 100px;
+        font-size: 10px;
+    }
+}

@@ -1,5 +1,6 @@
 @import '../sass/mixin.scss';
 @import '../sass/variable.scss';
+@import '../sass/global.scss';
 
 .Footer {
     width: 100%;
@@ -10,11 +11,13 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
         .LogoWhite{
             height: 30px;
             width: auto;
             padding-bottom: 5px;
         }
+        
         .FooterText{
             font-size: 10px;
         }

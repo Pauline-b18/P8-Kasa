@@ -1,5 +1,6 @@
 @import "../sass/mixin.scss";
 @import "../sass/variable.scss";
+@import '../sass/global.scss';
 
 .CollapseBar {
     width: 95%;
@@ -15,6 +16,7 @@
       color: $Red;
       opacity: 1;
     }
+    
     .CollapseTitle {
       @include FlexAndSpace;
       align-items: center;

@@ -1,0 +1,36 @@
+@import '../sass/mixin.scss';
+@import '../sass/variable.scss';
+@import '../sass/global.scss'; 
+
+.ErrorMain {
+    color: $Red;
+    text-align: center;
+    padding-bottom: 6%;
+
+    .ErrorTitle {
+        font-size: 9.5rem; /** 152px **/
+        font-weight: bolder;
+        padding: 3% 0 5.5% 0;
+    }
+
+    .ErrorText {
+        font-size: 18px;
+        padding-bottom: 4%;
+    }
+
+    .ErrorLink {
+        @include LinkStyle;
+    }
+}
+
+//QUERY - VERSION MOBILE
+
+@media (max-width: 750px) {
+    .ErrorTitle {
+        font-size: 6.5rem;
+    }
+    .ErrorText {
+        padding-bottom: 0;
+        margin-bottom: 22%;
+    }
+}

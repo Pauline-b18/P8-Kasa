@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h3 {
+  padding-bottom: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FF6060;
+}
+
+.carouselContainer {
+  display: flex;
+  position: relative;
+  margin: 5% 0 0 5%;
+}
+.carouselContainer .image-container {
+  width: 95%;
+  height: 330px;
+}
+.carouselContainer .carousel_arrow {
+  position: absolute;
+}
+.carouselContainer .carousel_arrow_right {
+  bottom: 49%;
+  left: 90%;
+}
+.carouselContainer .carousel_arrow_left {
+  bottom: 42%;
+}
+.carouselContainer .numberSlide {
+  color: #fff;
+  position: absolute;
+  bottom: 2%;
+  left: 48%;
+  font-size: 18px;
+  font-weight: 500;
+}
+.carouselContainer .image_carousel {
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.carouselContainer .image_carousel {
+  width: 95%;
+  height: 200px;
+  margin-right: 5%;
+}
+.carouselContainer .carousel_arrow_left {
+  width: 20px;
+  height: 20px;
+  bottom: 45%;
+}
+.carouselContainer .carousel_arrow_right {
+  width: 10px;
+  height: 15px;
+}
+.carouselContainer .numberSlide {
+  font-size: 12px;
+  left: 43%;
+}
+
+/*# sourceMappingURL=carousel.css.map */
