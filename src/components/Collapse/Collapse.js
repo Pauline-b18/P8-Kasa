@@ -28,7 +28,8 @@ const Collapse = ({ title, content, isLocation }) => {
             isCollapsed ? '' : 'collapse-menu-content-dropdown'
           }`}
         >
-          {isCollapsed ? null : content}
+          {/* Utilise la propriété content */}
+          {content}
         </div>
       </div>
     );
@@ -41,7 +42,7 @@ Collapse.propTypes = {
 };
 
 Collapse.defaultProps = {
-    isLocation: false // Par défaut, le composant n'est pas utilisé dans Locations.js, lorsque "true" il est lit les données de dataLoc
+    isLocation: false // Par défaut, le composant n'est pas utilisé dans Locations.js, lorsque "true" il lit les données de dataLoc
 };
 
 export default Collapse;

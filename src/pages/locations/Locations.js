@@ -2,13 +2,14 @@ import React from "react";
 import { useParams, Navigate } from "react-router-dom";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import Collapse from "../../components/Collapse/Collapse";
 import dataLoc from "../../data/data.json";
 import Carousel from "../../components/Carousel/Carousel";
 import Tag from "../../components/Tag/Tag";
 import Infos from "../../components/Infos/Infos";
 import Notation from "../../components/Notation/Notation";
 import "../../assets/style/pages/location.scss";
+import Collapse from "../../components/Collapse/Collapse";
+
 
 function Locations() {
   const { id } = useParams();
@@ -27,8 +28,13 @@ function Locations() {
     host,
     tags,
     equipments,
-    rating, // Changement ici : modifier 'notation' à 'rating'
+    rating,
   } = data;
+
+  // Affichage des équipements sous forme de liste
+  const equipmentsList = equipments.map((equipment, index) => (
+    <li key={index}>{equipment}</li>
+  ));
 
   return (
     <div className="Locations">
@@ -51,13 +57,13 @@ function Locations() {
                 <Infos image={host.picture} text={host.name} />
               </div>
               <div className="infoNotationHost">
-                <Notation rating={parseInt(rating)} /> {/* Passe la valeur de rating en tant que prop */}
+                <Notation rating={parseInt(rating)} />
               </div>
             </div>
           </div>
           <div className="collapse-container">
             <Collapse title={"Description"} content={description} isLocation={true} />
-            <Collapse title={"Équipements"} content={equipments} isLocation={true} />
+            <Collapse title={"Équipements"} isLocation={true} content={equipmentsList} />
           </div>
         </div>
       </div>
