@@ -12,11 +12,11 @@ import Collapse from "../../components/Collapse/Collapse";
 
 
 function Locations() {
-  const { id } = useParams();
-  const data = dataLoc.find((item) => item.id === id);
+  const { id } = useParams(); // Obtient l'ID de la page de location à partir des paramètres d'URL
+  const data = dataLoc.find((item) => item.id === id); // Récupère les données du logement correspondant à l'ID
 
-  if (!data) {
-    return <Navigate to="*" replace={true} />;
+  if (!data) { // Si aucune donnée n'est trouvée pour l'ID spécifié
+    return <Navigate to="*" replace={true} />; // Redirige vers la page d'erreur
   }
 
   // Destructuring des données du logement
@@ -39,7 +39,7 @@ function Locations() {
   return (
     <div className="Locations">
       <Navbar />
-      <div>
+      <div className="locationsContent">
         <Carousel pictures={pictures} />
         <div className="info">
           <div className="infoLocation">

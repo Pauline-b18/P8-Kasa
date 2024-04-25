@@ -3,10 +3,10 @@ import '../../assets/style/components/footer.scss';
 
 function Footer(){
     return(
-        <div className='Footer'>
+        <footer className='Footer'>
             <img src={Logo_white} alt='Logo de kasa'className='LogoWhite'/>
             <p className='FooterText'>© 2020 Kasa. All rights reserved</p>
-        </div>
+        </footer>
     )
 }
 export default Footer

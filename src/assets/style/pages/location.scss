@@ -2,6 +2,18 @@
 @import '../sass/variable.scss';
 @import '../sass/global.scss';
 
+.Locations {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    // .locationsContent {
+    //     flex-grow: 1;
+    // }
+    .Footer {
+        flex-grow: 1;
+    }
+}
 
 .info { 
     width: 90%;

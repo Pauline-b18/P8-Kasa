@@ -1,0 +1,30 @@
+@import '../sass/mixin.scss';
+@import '../sass/variable.scss';
+@import '../sass/global.scss';
+
+.About {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    // .AboutMain {     
+    //     // flex-grow: 1;
+    // }
+    .Footer {
+        margin-top: 73px ;
+        flex-grow: 1;
+        
+    }
+}
+
+
+ ///////////////////////////////////////////////////////////////////////////////////////
+  
+  /* Styles pour les appareils mobiles et les petites tablettes */
+@media (max-width: 768px) { 
+    .About {
+        .Footer {
+            margin: 73px 0 0 0 ;
+        }
+    }
+}  

@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path='/About' element={<About />}/>
         <Route path='/Locations/:id'element={<Locations />}/>
-        <Route path="*" element={<Error />}/>
+        <Route path="*" element={<Error />}/> {/* Route pour gérer les autres chemins non définis */}
       </Routes>
     </Router>
   );

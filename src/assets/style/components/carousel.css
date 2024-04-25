@@ -35,12 +35,14 @@ a {
   margin-top: 55px;
 }
 .carouselContainer .image-container {
+  position: relative;
   width: 100%;
   height: 415px;
 }
 .carouselContainer .carousel_arrow {
   position: absolute;
   top: 38%;
+  z-index: 1;
 }
 .carouselContainer .carousel_arrow_right {
   bottom: 49%;
@@ -58,6 +60,15 @@ a {
   transform: translateX(-50%);
   font-size: 18px;
   font-weight: 500;
+  z-index: 1;
+}
+.carouselContainer .mask-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(10, 10, 10, 0) 40%, rgba(4, 4, 4, 0) 80%, rgba(0, 0, 0, 0.4));
 }
 .carouselContainer .image_carousel {
   border-radius: 25px;
@@ -87,7 +98,7 @@ a {
     left: 10px;
   }
   .carouselContainer .numberSlide {
-    font-size: 13px;
+    display: none;
   }
   .carouselContainer .image_carousel {
     border-radius: 10px;

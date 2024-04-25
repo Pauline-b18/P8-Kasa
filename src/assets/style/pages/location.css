@@ -6,10 +6,18 @@
   font-style: normal;
 }
 
-body {
-  max-width: 1440px;
-  margin: 0 auto;
+.root {
+  background: red;
+}
+
+html, body {
+  height: 100%;
   overflow-x: hidden;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 h3 {
@@ -23,6 +31,15 @@ li {
 a {
   text-decoration: none;
   color: #000000;
+}
+
+.Locations {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.Locations .Footer {
+  flex-grow: 1;
 }
 
 .info {

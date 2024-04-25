@@ -13,9 +13,10 @@ function About() {
             <Navbar />
             <Banner image={BannerAbout} />
             <div className='AboutMain'>
-                {AboutData.map((item) => (
+                {/* Boucle sur les données pour afficher chaque élément dans un Collapse */}
+                {AboutData.map((item) => ( 
                     <Collapse title={item.title} key={item.id} content={item.content} isLocation={false} >
-                        <p>{item.content}</p>
+                        <p>{item.content}</p> {/* Contenu affiché à l'intérieur de chaque Collapse */}
                     </Collapse>
                 ))}
             </div>
