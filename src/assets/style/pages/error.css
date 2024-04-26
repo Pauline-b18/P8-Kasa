@@ -68,16 +68,16 @@ a {
 
 /* Styles pour les appareils mobiles et les petites tablettes */
 @media (max-width: 768px) {
-  .ErrorMain {
+  .Error .ErrorMain {
     gap: 100px;
   }
-  .ErrorMain .ErrorTitle {
+  .Error .ErrorMain .ErrorTitle {
     font-size: 96px;
   }
-  .ErrorMain .ErrorText {
+  .Error .ErrorMain .ErrorText {
     font-size: 18px;
   }
-  .ErrorMain .ErrorLink {
+  .Error .ErrorMain .ErrorLink {
     font-size: 14px;
   }
 }

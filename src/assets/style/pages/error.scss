@@ -45,6 +45,7 @@
     
 /* Styles pour les appareils mobiles et les petites tablettes */
 @media (max-width: 768px) { 
+.Error{    
     .ErrorMain {
         gap: 100px;
 
@@ -59,3 +60,4 @@
         }
     }
 }  
+}
