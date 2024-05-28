@@ -4,8 +4,6 @@ import data from '../../data/data.json';
 import '../../assets/style/components/gallery.scss'; 
 
 function Gallery() { // Fonction Gallery
-  const handleClick  = (id) => {  // Choisis la carte et indique le bon ID pour la page de logement.
-  };
 
   return (
     <div className='galleryContainer'> 
@@ -15,7 +13,6 @@ function Gallery() { // Fonction Gallery
           id={item.id} 
           title={item.title} 
           cover={item.cover} 
-          handleClick ={handleClick } // Propriété handleClick passée au composant Card
         />
       ))}
     </div>

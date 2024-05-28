@@ -58,6 +58,10 @@
         .NavbarLink {
             width: 52%;
             font-size: 12px;
+
+            .activeLink, .inactiveLink {
+                text-transform: uppercase;
+            }
         }
     }
 } 
